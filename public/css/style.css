@@ -1,0 +1,157 @@
+body {
+    /* font-family: cursive; */
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: #888585;
+}
+
+/* BRAND CSS */
+/* HOME PAGE */
+
+.brand {
+    position: absolute;
+    background: #1d1e1f90;
+    left: 0;
+    top: 0;
+    width: 450px;
+    height: 693px;
+    border-radius: 400px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.brand img {
+    position: relative;
+    top: 150px;
+    left: 50px;
+}
+
+.inside {
+    margin-left: 15px;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-top: 425px;
+}
+.text button{
+    position: absolute;
+    top: 426px;
+    left: 620px;
+}
+
+a .login{
+    left: 900px;
+}
+
+a .register{
+    left: 700px;
+}
+
+.text p {
+    font-size: 1.3rem;
+    letter-spacing: 3px;
+    color: #ffffff;
+    position: absolute;
+    width: 594px;
+    height: 53px;
+    left: 620px;
+    top: 273px;
+}
+
+.text h5 {
+    font-size: 2.5rem; 
+    color: #ffffff;
+    letter-spacing: 10px;
+    position: absolute;
+    font-family: 'Inter';
+    font-style: normal;
+    left: 552px;
+    top: 126px;
+}
+
+
+/* REGISTER CSS */
+
+.wrapper {
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 25px;
+    left: 450px;
+    height: 620px;
+    width: 522px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.wrapper h1 {
+    text-align: center;
+    margin-top: 7px;
+}
+
+.wrapper p {
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+p span a {
+    text-decoration: none;
+}
+
+label {
+    margin-left: 60px;
+    color: #2e2929;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+input {
+    margin-left: 50px;
+    width: 400px;
+    border: 1px solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 2.5px;
+    padding: 5px;
+}
+
+form button {
+    margin-top: 90px;
+    margin-left: 200px;
+    letter-spacing: 2px;
+}
+
+
+/* LOGIN CSS */
+
+.loginContainer {
+    border: 1px solid #ffffff;
+    position: absolute;
+    top: 70px;
+    left: 450px;
+    height: 400px;
+    width: 522px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.loginContainer h1 {
+    margin-top: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.loginContainer p{
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.loginContainer h1, p {
+    text-align: center;
+}
