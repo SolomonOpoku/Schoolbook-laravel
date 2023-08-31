@@ -14,7 +14,7 @@ body {
     left: 0;
     top: 0;
     width: 450px;
-    height: 693px;
+    height: 688px;
     border-radius: 400px;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
@@ -154,4 +154,86 @@ form button {
 
 .loginContainer h1, p {
     text-align: center;
+}
+
+
+/* INDEX CSS */
+.navContainer {
+    position: absolute;
+    border: 1px solid #f5e2c0;
+    border-radius: 10px;
+    background-color: #f5e2c0;
+    left: 2px;
+    top: 10px;
+    height: 670px;
+    width: 250px;
+    padding: 20px;
+}
+
+.navlinks ul {
+    display: inline;
+}
+
+.navlinks a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navlinks li {
+    margin: 20px;
+    display: block;
+}
+
+.navlinks span {
+    /* position: relative; */
+    margin-top: 250px;
+}
+
+#logo {
+    width: 25%;
+    margin-left: 20px;
+}
+
+.indexContainer {
+    position: absolute;
+    top: 10px;
+    left: 260px;
+}
+
+.top-bar {
+    border: 1px solid #f5e2c0;
+    display: inline-flex;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f5e2c0;
+}
+
+.top-bar h1 {
+    position: relative;
+    left: 80px;
+    font-weight: bold;
+    /* font-family: 'Inter'; */
+}
+
+.top-bar img {
+    width: 6%;
+    border-radius: 100px;
+    margin-left: 670px;
+}
+
+.body {
+    border: 1px solid #f5e2c0;
+    height: 547px;
+    border-radius: 10px;
+    background-color: #f7ecd9;
+    margin-top: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.body img {
+    width: 30%;
+    border-radius: 15px;
 }

@@ -14,15 +14,24 @@ use App\Http\Controllers\registerController;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome', function () {
     return view('welcome');
 });
 
-// Display First Page
-Route::get('/home', [registerController::class, 'home']);
+// Display First Page Route
+Route::get('/', [registerController::class, 'home']);
 
-// Display Register Page
+// Display Register Page Route
 Route::get('/register', [registerController::class, 'create']);
 
-// Display Login Page
+// Register Post Route
+Route::post('/register', [registerController::class, 'store']);
+
+// Display Login Page Route
 Route::get('/login', [registerController::class, 'login']);
+
+// Display Home Page Route
+Route::get('/home', [registerController::class, 'index']);
+
+// Display Post Page Route
+Route::get('/post', [registerController::class, 'createPost']);

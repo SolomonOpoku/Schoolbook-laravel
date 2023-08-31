@@ -7,8 +7,9 @@
 <p>Already have an account? <span><a href="/login">Login</a></span></p>
 
 
-<form action="" method="POST">
+<form action="/register" method="POST">
 
+@csrf
     <label>Name <span>*</span></label>
     <br>
     <input type="text" name="name"/>
