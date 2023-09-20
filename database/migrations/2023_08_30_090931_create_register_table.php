@@ -16,10 +16,11 @@ return new class extends Migration
         Schema::create('register', function (Blueprint $table) {
             $table->id();
             $table -> string('name');
-            $table -> string('email');
+            $table -> string('email') -> unique();
             $table -> string('school');
             $table -> string('nicky');
             $table -> string('password');
+            // $table -> string('api_token', 80) ->unique() ->nullable() ->default(null);
             $table->timestamps();
         });
     }

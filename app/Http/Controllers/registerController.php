@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\register;
 
@@ -18,31 +19,64 @@ class registerController extends Controller
         return view('pages.register');
     }
 
-    // Display Login Page
-    public function login() {
-        return view('pages.login');
-    }
-
-    // Display Home Page when Registered or Logged in
-    public function index() {
-        return view('pages.index');
-    }
-
     // Stores Register Form
     public function store(Request $request) {
-        $register = new register;
+        $register = request() -> validate([
+            'name' => ['string', 'required'],
+            'email' => ['string', 'required', 'email', 'unique:register'],
+            'school' => ['string', 'required'],
+            'nicky' => ['string', 'required'],
+            'password' => ['string', 'required', 'min:8', 'max:12'],
+        ]);
 
-        $register -> name = $request -> input('name');
-        $register -> email = $request -> input('email');
-        $register -> school = $request -> input('school');
-        $register -> nicky = $request -> input('nicky');
-        $register -> password = $request -> input('password');
-
-        $register -> save();
+        register::create($register);
         return redirect('/home');
     }
 
-    public function createPost() {
-        return view('pages.post');
+    // Display Login Page
+    public function showLogin() {
+        return view('pages.login');
     }
+
+    
+
+    // public function login(Request $request) {
+        // $credentials = $request -> only('email', 'password');
+        // request() -> validate([
+        //     'email' => ['email', 'required'],
+        //     'password' => ['required']
+        // ]);
+
+        // if (Auth::attempt($credentials)) {
+        //     return redirect() -> intended('/home');
+        // }
+        // return redirect() -> back() -> withErrors(['email' => 'Invalid Credentials!']);
+
+        // if(auth() -> attempt(request() -> only(['email', 'password']), request() -> filled('remember')))
+        //  {
+        //     return redirect('/home');
+        // }
+        // return redirect() -> back() -> withErrors(['email' => 'Invalid Credentials!']);
+    // }
+
+
+
+    // public function login(Request $request) {
+    //     $login = request() -> validate([
+    //         'email' => ['string', 'required', 'email'],
+    //         'password' => ['string', 'required', 'min:8', 'max:12'],
+    //     ]);
+
+    //     $user = register::where('email', '=', $request -> email) -> first();
+    //     if ($user) {
+    //         if ($request -> password == $user -> password) {
+    //             $request -> session() -> put('loginId', $user -> id);
+    //             return redirect('/home');
+    //         } else {
+    //             return redirect() -> back() -> withErrors(['fail' => 'Password does not match']);
+    //         }
+    //     } else {
+    //         return redirect() -> back() -> withErrors(['fail' => 'Email is not registered']);
+    //     }
+    // }
 }

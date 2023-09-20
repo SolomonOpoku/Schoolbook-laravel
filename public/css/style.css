@@ -5,7 +5,14 @@ body {
     background-color: #888585;
 }
 
+label {
+    color: #2e2929;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
 /* BRAND CSS */
+
 /* HOME PAGE */
 
 .brand {
@@ -69,6 +76,10 @@ a .register{
     top: 126px;
 }
 
+/* END OF HOME PAGE */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 
 /* REGISTER CSS */
 
@@ -97,7 +108,7 @@ p span a {
     text-decoration: none;
 }
 
-label {
+.wrapper label {
     margin-left: 60px;
     color: #2e2929;
     font-size: 1rem;
@@ -110,7 +121,7 @@ span {
     font-weight: bold;
 }
 
-input {
+.wrapper input {
     margin-left: 50px;
     width: 400px;
     border: 1px solid;
@@ -121,11 +132,15 @@ input {
     padding: 5px;
 }
 
-form button {
+.wrapper form button {
     margin-top: 90px;
     margin-left: 200px;
     letter-spacing: 2px;
 }
+
+/* END OF REGISTER CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 
 /* LOGIN CSS */
@@ -156,8 +171,13 @@ form button {
     text-align: center;
 }
 
+/* END OF REGISTER CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /* INDEX CSS */
+
+/* SIDENAV CSS */
 .navContainer {
     position: absolute;
     border: 1px solid #f5e2c0;
@@ -196,6 +216,12 @@ form button {
     margin-left: 20px;
 }
 
+/* END OF SIDENAV CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/* NAVBAR CSS */
+
 .indexContainer {
     position: absolute;
     top: 10px;
@@ -208,13 +234,13 @@ form button {
     padding: 20px;
     border-radius: 10px;
     background-color: #f5e2c0;
+    width: 1100px;
 }
 
 .top-bar h1 {
     position: relative;
     left: 80px;
     font-weight: bold;
-    /* font-family: 'Inter'; */
 }
 
 .top-bar img {
@@ -223,17 +249,169 @@ form button {
     margin-left: 670px;
 }
 
+.body img {
+    width: 25%;
+    border-radius: 15px;
+}
+
+/* END OF NAVBAR CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
 .body {
     border: 1px solid #f5e2c0;
     height: 547px;
+    position: absolute;
     border-radius: 10px;
     background-color: #f7ecd9;
-    margin-top: 20px;
+    margin-top: 130px;
     padding: 50px;
+    margin-left: 260px;
+    width: 1100px;
     text-align: center;
 }
 
-.body img {
-    width: 30%;
-    border-radius: 15px;
+
+/* POST CSS */
+
+.post-form {
+    position: absolute;
+    left: 250px;
 }
+
+.file {
+    width: 250px;
+    margin-left: -150px;
+}
+
+.form-group label {
+    font-size: 1rem;
+}
+
+.file-label {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom:25px;
+    left: -277px;
+}
+
+textarea {
+    margin-top: 50px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+    background-color: #f7ecd9;
+    color: black;
+    width: 500px;
+}
+
+.textarea-label {
+    position: absolute;
+    left: -80px;
+    top: 160px;
+}
+
+.post-btn {
+    margin-top: 65px;
+    margin-left: 120px;
+}
+
+/* END OF POST CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/* PROFILE CSS */
+
+.profile-container img {
+    position: absolute;
+    left: 100px;
+    top: 60px;
+    width: 27%;
+    border-radius: 160px ;
+}
+
+.profile-container h3, h4 {
+    position: relative;
+    left: 75px;
+    margin: 20px;
+    letter-spacing: 2px;
+    top: 50px;
+    font-weight: bold;
+}
+
+.profile-container button {
+    margin-top: 100px;
+    margin-left: 120px;
+}
+
+/* END OF PROFILE CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/* EDIT PROFILE CSS */
+
+.edit-input {
+    /* margin-left: 50px; */
+    width: 400px;
+    border: 1px solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 2.5px;
+    padding: 5px;
+    background-color:#f7ecd9;
+}
+
+.edit-profile-container form {
+    margin-top: -35px;
+}
+
+.edit-profile-container label {
+    margin-top: 20px;
+    margin-left: -370px;
+}
+
+.edit-label label {
+    margin-left: -340px;
+}
+
+.edit-profile-container button {
+    margin-top: 50px;
+}
+
+/* END OF EDIT PROFILE CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/* SETTINGS CSS */
+
+.settings-container h6 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.settings-container button {
+    margin-top: 50px;
+}
+
+.settings-container label {
+    margin-top: 20px;
+    margin-left: -370px;
+}
+
+.settings-container input {
+    width: 400px;
+    border: 1px solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 2.5px;
+    padding: 5px;
+    background-color:#f7ecd9;
+}
+
+/* END OF SETTINGS CSS */
+
+/* ////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/

@@ -1,28 +1,10 @@
-@extends('layouts.registerLayout')
+@extends('layouts.app')
 
 
 @section('content')
-<nav class="navContainer">
-    <a href="/"><img id="logo" src="images/logo.png" alt="logo"></a>
+@include('layouts.pagesLayouts.sideNav')
 
-    <div class="navlinks">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Profile</a></li>
-            <li><a href="/post">Post</a></li>
-            <li><a href="">Settings</a></li>
-        </ul>
-        <span class="btn btn-danger logout-span"><a href="">Logout</a></span>
-    </div>
-
-</nav>
-
-<div class="indexContainer">
-    <div class="top-bar">
-    <h1>SCHOOLBOOK</h1>
-        <img src="images/profile.jpg" alt="profile-image">
-        <a href="">Profile</a>
-    </div>
+@include('layouts.pagesLayouts.navbar')
 
     <div class="body">
         <img src="images/banner.jpg" alt="">
